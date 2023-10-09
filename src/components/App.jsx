@@ -8,8 +8,8 @@ function App() {
     const [notes, addNote] = useState([])
     function appendNote(content) {
         content.title && content.content && addNote((prev) => ([...prev, content]))
-        content.title === '' && confirm('Add title');
-        content.content === '' && alert('Add content'); { return false }
+        content.title === '' && alert('Add title');
+        content.content === '' && alert('Add content'); 
     }
     function deleteNote(id) {
         addNote((prev) => {
